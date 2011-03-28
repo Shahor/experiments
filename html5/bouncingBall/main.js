@@ -24,13 +24,13 @@ window.onload = function () {
 				ballParams.flatEffect.x -= appParams.flatCoef / 4;
 			if (ballParams.flatEffect.y > 0)
 				ballParams.flatEffect.y -= appParams.flatCoef / 4;
-			
+
 			ballParams.x = ballParams.xDirection > 0 ? ballParams.x + appParams.xStep : ballParams.x - appParams.xStep;
 			ballParams.y = ballParams.yDirection > 0 ? ballParams.y + appParams.yStep : ballParams.y - appParams.yStep;
-			
+
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 			ctx.drawImage(img, ballParams.x, ballParams.y, img.width - ballParams.flatEffect.x, img.height - ballParams.flatEffect.y);
-			
+
 			if (ballParams.x + img.width >= canvas.width || ballParams.x === 0)
 			{
 				if (ballParams.flatEffect.x == 0) ballParams.flatEffect.x = 3 * appParams.flatCoef;
