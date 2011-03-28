@@ -14,7 +14,6 @@ $(function (){
 
 	img.onload = function() {
 		animationTimer = setInterval(function () {
-//			console.log("Image positions  x : " + ballParams.x + " | y : " + ballParams.y);
 			ballParams.x = ballParams.xDirection > 0 ? ballParams.x + xStep : ballParams.x - xStep;
 			ballParams.y = ballParams.yDirection > 0 ? ballParams.y + yStep : ballParams.y - yStep;
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
