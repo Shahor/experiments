@@ -7,7 +7,7 @@ end
 pattern = ARGV.shift
 
 ARGV.each do |file|
-	if File.exists?(file)
+	if File.exists?(file) && File.file?(file)
 		lineCounter = 0
 
 		stream = File.open(file);
