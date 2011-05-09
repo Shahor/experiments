@@ -1,0 +1,22 @@
+#!/usr/bin/ruby
+
+if not ARGV.length > 0
+	puts "Usage: " + $0 + " PATTERN [FILE]\n"
+end
+
+pattern = ARGV.shift
+
+ARGV.each do |file|
+	if File.exists?(file)
+		lineCounter = 0
+
+		stream = File.open(file);
+		stream.each do |line|
+			lineCounter += 1
+			if line =~ /#{pattern}/
+				puts file + ":" + lineCounter.to_s + ": " + line
+			end
+		end
+		stream.close
+	end
+end
