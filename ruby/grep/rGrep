@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 
+# Simple grep tool using ruby. Not intended to copy fully the original grep
+
 if not ARGV.length > 0
 	puts "Usage: " + $0 + " PATTERN [FILE]\n"
 end
