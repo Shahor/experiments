@@ -1,0 +1,5 @@
+Simple hello world application
+
+Two buttons : 
+* Alert button displays hello world on a label
+* Voice button says "Hello world" to you
