@@ -1,0 +1,19 @@
+@import "compass/reset";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+}
+
+$dz-side: 400px;
+.dropzone {
+    border: black dashed 5px;
+    margin: auto;
+    width: $dz-side;
+    height: $dz-side;
+}
