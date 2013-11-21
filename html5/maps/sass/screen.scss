@@ -7,13 +7,24 @@ body {
 
 body {
     display: flex;
+    flex-direction: column;
+
     height: 100%;
 }
 
-$dz-side: 400px;
+$dz-side: 200px;
 .dropzone {
     border: black dashed 5px;
     margin: auto;
-    width: $dz-side;
+    width: 2 * $dz-side;
     height: $dz-side;
+}
+
+.map {
+	background-color: pink;
+	margin: auto;
+	width: 700px;
+	height: 400px;
+	border: black solid 10px;
+	border-radius: 10px;
 }
